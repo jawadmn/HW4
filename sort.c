@@ -11,7 +11,7 @@ int compare(int a, int b) {
 }
 
 int compareQ(const void *a, const void *b) {
-	return *(const int*)a - *(const int *)b;
+	return compare(*(int*)a, *(int *)b);
 }
 
 void bubble_sort(int *numbers, unsigned count) {
